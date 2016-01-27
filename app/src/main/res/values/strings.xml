@@ -4,4 +4,17 @@
     <string name="hello_world">Hello world!</string>
     <string name="main_activity_title">My Nanodegree Apps!</string>
     <string name="action_settings">Settings</string>
+    <string name="spotifystreamertext">SPOTIFY STREAMER</string>
+    <string name="spotifystreamertag">spotify streamer</string>
+    <string name="scoresapptext">SCORES APP</string>
+    <string name="scoresapptag">scores</string>
+    <string name="librarytext">LIBRARY APP</string>
+    <string name="librarytag">library</string>
+    <string name="builditbiggertext">BUILD IT BIGGER</string>
+    <string name="builditbiggertag">build it bigger</string>
+    <string name="xyzreadertext">XYZ READER</string>
+    <string name="xyzreadertag">xyz reader</string>
+    <string name="capstonetext">CAPSTONE:MY OWN APP</string>
+    <string name="capstonetag">capstone</string>
+    <string name="clickedmessage">This button will launch my</string>
 </resources>

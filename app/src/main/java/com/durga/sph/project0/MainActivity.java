@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void OnButtonClick(View view)
     {
-        String message = String.format("This button will launch my %s app!", view.getTag());
+        String message = getString(R.string.clickedmessage) + " " + view.getTag() + " app!";
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 

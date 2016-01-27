@@ -1,91 +1,84 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:background="#c8e6c9"
-    >
-    <TextView android:id="@+id/titletxt" android:text="@string/main_activity_title" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_gravity="center"
+    android:background="@color/mainbg"
+    android:orientation="vertical">
+    <TextView android:id="@+id/titletxt"
+        android:text="@string/main_activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_centerHorizontal="true"
-        android:textSize="24sp"/>
-
+        android:textSize="@dimen/title_text_size"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal|vertical"
+        android:fillViewport="true">
     <LinearLayout android:layout_height="match_parent"
         android:layout_width="wrap_content"
         android:orientation="vertical"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/titletxt"
-        android:layout_marginTop="8sp">
+        android:layout_gravity="center_horizontal"
+        >
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SPOTIFY STREAMER"
-            android:tag="spotify streamer"
+            android:text="@string/spotifystreamertext"
+            android:tag="@string/spotifystreamertag"
             android:id="@+id/spotifybutton"
-            android:layout_marginTop="8sp"
-            android:layout_gravity="center"
-            android:background="#f57f17"
-            android:onClick="OnButtonClick"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SCORES APP"
-            android:tag="scores"
-            android:id="@+id/scoresbutton"
-            android:layout_marginTop="8sp"
-            android:layout_gravity="center"
-            android:background="#f57f17"
-            android:onClick="OnButtonClick"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="LIBRARY APP"
-            android:tag="library"
-            android:id="@+id/librarybutton"
-            android:layout_marginTop="8sp"
-            android:layout_gravity="center"
-            android:background="#f57f17"
-            android:onClick="OnButtonClick"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BUILD IT BIGGER"
-            android:tag="build it bigger"
-            android:id="@+id/builditbiggerbutton"
-            android:layout_marginTop="8sp"
-            android:layout_gravity="center"
-            android:background="#f57f17"
             android:onClick="OnButtonClick"
+            style="@style/buttonstyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scoresapptext"
+            android:tag="@string/scoresapptag"
+            android:id="@+id/scoresbutton"
+            android:onClick="OnButtonClick"
+            style="@style/buttonstyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/librarytext"
+            android:tag="@string/librarytag"
+            android:id="@+id/librarybutton"
+            android:onClick="OnButtonClick"
+            style="@style/buttonstyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/builditbiggertext"
+            android:tag="@string/builditbiggertag"
+            android:id="@+id/builditbiggerbutton"
+            android:onClick="OnButtonClick"
+            style="@style/buttonstyle"
             />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="XYZ READER"
-            android:tag="xyz reader"
+            android:text="@string/xyzreadertext"
+            android:tag="@string/xyzreadertag"
             android:id="@+id/xyzreaderbutton"
-            android:layout_marginTop="8sp"
-            android:layout_gravity="center"
-            android:background="#f57f17"
-            android:onClick="OnButtonClick"/>
+            android:onClick="OnButtonClick"
+            style="@style/buttonstyle"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CAPSTONE:MY OWN APP"
-            android:tag="capstone"
+            android:text="@string/capstonetext"
+            android:tag="@string/capstonetag"
             android:id="@+id/capstonebutton"
-            android:layout_marginTop="8sp"
-            android:layout_gravity="center"
             android:onClick="OnButtonClick"
-            android:background="#f50057"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            style="@style/capstonebuttonstyle"
             />
     </LinearLayout>
-</RelativeLayout>
+    </ScrollView>
+</LinearLayout>
